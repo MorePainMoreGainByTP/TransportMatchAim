@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">TransportMatch</string>
+    <string name="blue_teeth">蓝牙</string>
+    <string name="wi_fi">wi-fi</string>
+    <string name="more_function">更多功能</string>
+    <string name="register_id">您的注册ID：</string>
+    <string name="register">注册</string>
+    <string name="track_now">立即追踪</string>
+    <string name="command_alert">指令报警</string>
+    <string name="history_trace">历史轨迹</string>
+    <string name="safe_circle">安全围栏</string>
+    <string name="change_id">更改绑定ID</string>
+    <string name="new_id">新的注册ID：</string>
+    <string name="line_distance">目标直线距离：</string>
+    <string name="get_id">获取注册ID</string>
+    <string name="aim_location">目标位置</string>
+    <string name="is_tracking">正在追踪</string>
+    <string name="system_setting">系统设置</string>
+    <string name="safe_tip_frequency">安全围栏提醒</string>
+    <string name="system_info">消息推送</string>
+    <string name="aim">目标:</string>
+    <string name="parser">解析中...</string>
+    <string name="satellite_map">卫星地图</string>
+    <string name="curr_distance">围栏半径：</string>
+    <string name="unknown">--</string>
+    <string name="select_date">选择日期：</string>
+
+</resources>
