@@ -93,7 +93,6 @@ public class MyPushReceiver extends PushMessageReceiver {
         Log.i(TAG, "onBind: " + responseString);
 
         vibrator = (Vibrator) context.getSystemService(Context.VIBRATOR_SERVICE);
-        onMessage(context,"0","");
     }
 
     /**

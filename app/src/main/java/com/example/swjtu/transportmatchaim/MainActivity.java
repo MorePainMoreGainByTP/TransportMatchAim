@@ -3,6 +3,7 @@ package com.example.swjtu.transportmatchaim;
 import android.app.ProgressDialog;
 import android.bluetooth.BluetoothAdapter;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
@@ -27,6 +28,7 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.baidu.android.pushservice.PushConstants;
 import com.baidu.android.pushservice.PushManager;
+import com.example.swjtu.transportmatchaim.uploadLatLng.UploadLatLngService;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -117,6 +119,7 @@ public class MainActivity extends AppCompatActivity {
         initViews();
         initData();
 
+        startUploadService();
         Thread.setDefaultUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() {
             @Override
             public void uncaughtException(Thread t, Throwable e) {
@@ -124,6 +127,11 @@ public class MainActivity extends AppCompatActivity {
                 Log.e(TAG, "uncaughtException: ", e);
             }
         });
+    }
+
+    private void startUploadService() {
+        Intent intent = new Intent(MainActivity.this, UploadLatLngService.class);
+        startService(intent);
     }
 
     private void initViews() {
